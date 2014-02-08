@@ -1,4 +1,4 @@
-# fluent-plugin-buffered-stdout
+# fluent-plugin-buffered-stdout, a plugin for [Fluentd](http://fluentd.org)
 
 Fluentd STDOUT output plugin with buffering. This plugin is for testing of buffer plugins only.
 
