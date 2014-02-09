@@ -1,6 +1,6 @@
 # fluent-plugin-buffered-stdout
 
-Fluentd STDOUT output plugin with buffering. This plugin is for testing of buffer plugins only.
+[Fluentd](http://fluentd.org) STDOUT output plugin with buffering. This plugin is for testing of buffer plugins only.
 
 ## Configuration
 
