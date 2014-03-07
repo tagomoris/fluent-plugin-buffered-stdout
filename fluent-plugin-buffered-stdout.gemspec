@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-buffered-stdout"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["TAGOMORI Satoshi"]
   spec.email         = ["tagomoris@gmail.com"]
   spec.description   = %q{Fluentd STDOUT output plugin with buffering, for buffer plugin tests only}
