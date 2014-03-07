@@ -18,6 +18,11 @@ module Fluent
       end
     end
 
+    # Define `log` method for v0.10.42 or earlier
+    unless method_defined?(:log)
+      define_method("log") { $log }
+    end
+
     def configure(conf)
       super
       @output_proc = OUTPUT_PROCS[@output_type]
@@ -26,9 +31,9 @@ module Fluent
     def write_objects(tag, es)
       now = Time.now
       es.each {|time,record|
-        $log.write "#{now.localtime} #{Time.at(time).localtime} #{tag}: #{@output_proc.call(record)}\n"
+        log.write "#{now.localtime} #{Time.at(time).localtime} #{tag}: #{@output_proc.call(record)}\n"
       }
-      $log.flush
+      log.flush
     end
   end
 end
